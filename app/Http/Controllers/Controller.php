@@ -48,7 +48,7 @@ class Controller extends BaseController
     }
 
     function showStudentList(Request $request){
-        $id = $request->input("id");
+        $id = $request->input("id"); //hi
         $teacher = Teacher::find($id);
         $students = $teacher->students;
         return view("list",[
